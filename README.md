@@ -50,7 +50,7 @@ Each dataset directory is **self-contained** and includes independent configurat
 - **ShanghaiTech**
   - Campus surveillance anomaly detection dataset
 
- - **CADD**
+ - **Uniform-DVAD(CADD)**
 
 Please refer to the README file in each dataset directory for dataset preparation details.
 
@@ -100,6 +100,16 @@ Code structure and naming are anonymized
 Links to personal or institutional resources are intentionally omitted
 
 The repository will be updated with full documentation and attribution upon acceptance.
+
+## 🎯 Pretrained Model
+- **UCF-Crime**
+https://drive.google.com/file/d/1ppJpGlqSLy12kM2zjacL1h-wFcjCx1Qy/view?usp=sharing
+
+- **ShanghaiTech**
+https://drive.google.com/file/d/1Ab_5xiAdQzerJK2Q8ncoixaER8Zz8rqe/view?usp=drive_link
+
+ - **Uniform-DVAD(CADD)**
+https://drive.google.com/file/d/1kqvbotadPdO6Cpzt3ldl_JCX8p-KgTJC/view?usp=drive_link
 
 📄 License
 
