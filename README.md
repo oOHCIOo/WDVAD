@@ -1,10 +1,5 @@
 # WDVAD: Weakly-supervised Dynamic Video Anomaly Detection
 
-This repository provides an **anonymous implementation** of a **Weakly-supervised Dynamic Video Anomaly Detection (WDVAD)** framework, submitted for peer review.
-
-The code implements a **federated learning–based video anomaly detection system** that adapts to **evolving anomaly definitions after deployment**, using **client-level local relabeling** and an **MMD-based label self-correction mechanism**.
-
----
 
 ## 📌 Overview
 
@@ -52,8 +47,10 @@ Each dataset directory is **self-contained** and includes independent configurat
   - Large-scale video anomaly detection benchmark
   - 13 anomaly categories
 
-- **ShanghaiTech CADD**
+- **ShanghaiTech**
   - Campus surveillance anomaly detection dataset
+
+ - **CADD**
 
 Please refer to the README file in each dataset directory for dataset preparation details.
 
@@ -66,7 +63,7 @@ Each dataset directory provides its own environment configuration.
 Example:
 ```bash
 conda env create -f environment.yml
-conda activate FEDKD
+
 
 🚀 Running Experiments
 
@@ -78,14 +75,18 @@ Run the federated learning server:
 python server.py
 
 Run one or multiple clients:
+
 python client.py --cid <client_id>
+
 During training, the system automatically performs MMD-based label self-correction and computes evaluation metrics.
 
 
 Ablation Study (Paper Results)
+
 python ablation_study.py --cid <client_id> --dataset_type <dataset_type>
 
 Standalone Evaluation
+
 python standalone_eval.py --ckpt_path <path_to_checkpoint>
 
 Anonymity Notice
